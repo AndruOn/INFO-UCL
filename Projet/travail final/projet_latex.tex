@@ -1,0 +1,468 @@
+\documentclass{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{array}
+\documentclass[12pt, openany]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[frenchb]{babel}
+\usepackage{libertine}
+\usepackage{hyperref}
+\usepackage[hyphens]{url}
+\usepackage{appendix}
+\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{subcaption}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{media9}
+
+\begin{document}
+
+\begin{titlepage}
+  \begin{sffamily}
+  \begin{center}
+
+    % Upper part of the page. The '~' is needed because \\
+    % only works if a paragraph has started.
+    \includegraphics[scale=0.30]{Logo_EPL.jpg}~
+    
+
+    \textsc{\LARGE École Polytechnique de Louvain}\\[1cm]
+    \textsc{\LARGE LEPL1501 -  Groupe 11.tonGroupe}\\[1cm]
+    \textsc {Année académique 2018-2019}
+    
+    % Title
+    \HRule \\[0.4cm]
+    { \huge  \textsc\bfseries{ Rapport de projet}\\[0.4cm] }
+    {\Large\textsc{Voiture mécanique ou un truc du genre}}
+
+    \HRule \\[2cm]
+    \includegraphics[scale=0.4]{imageRepresentantTonProjet.jpg}
+    \\[1,5cm]
+
+    % Author and supervisor
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushleft} \large
+        NOM \textsc{Prénom - noma}\\
+        dans l'ordre alphabétique les noms\\
+        NOM \textsc{Prénom - noma}\\
+        NOM \textsc{Prénom - noma}\\
+        NOM \textsc{Prénom - noma}\\
+        NOM \textsc{Prénom - noma}\\
+        NOM \textsc{Prénom - noma}\\
+        
+      \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushright} \large
+        \emph{Tuteur :} M. \textsc{}\\
+        \emph{Professeur :} M. \textsc{}\\
+        \emph{Professeur :} M. \textsc{}\\
+      \end{flushright}
+    \end{minipage}
+
+    \vfill
+
+    % Bottom of the page
+    {\large {} Décembre 2018}
+
+  \end{center}
+  \end{sffamily}
+\end{titlepage}
+
+
+
+
+\tableofcontents
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+
+\chapter{Cahier des charges}
+Voir Annexe \ref{cdc}
+
+\chapter{Evolution des maquettes et photos}
+Voir Annexe \ref{evo}
+
+\chapter{Dessins 2D du prototype (3 vues standard + coupe, à la main)}
+Voir Annexe \ref{2d}
+
+\chapter{Dessin 3D du prototype (à la main)}
+Voir Annexe \ref{3d}
+
+\chapter{Fabrication du prototype (photos des pièces 3D, preuve de la fabrication par le groupe, ...)} 
+Voir Annexe \ref{fab}
+
+\chapter{Illustrations du mécanisme (dessins, schémas, coupes, plans) et de l’engin}
+Voir Annexe \ref{meca}
+
+\chapter{Modèle physique (sources d’énergie, paramètres réglables, modèle de frottement)} 
+Voir Annexe \ref{phys}
+
+\chapter{Simulation (programme, résultats, graphiques)}
+Voir Annexe \ref{simu}
+
+\chapter{Eléments relatifs au prototype pour le concours}
+Voir Annexe \ref{conc}
+
+\chapter{Poster pour le concours}
+Voir Annexe \ref{poster}
+
+\chapter{Contrat d’équipe, répartition des fonctions, EPP individuelles et de groupe}
+Voir Annexe \ref{contrat}
+
+\chapter{Grilles de planification des 4 dernières semaines}
+Voir Annexe \ref{plannif}
+
+\chapter{Comptabilité du projet (coût des pièces, ...)}
+Voir Annexe \ref{compta}
+
+\chapter{Introduction au tutoriel}
+
+Pour commencer créé un compte overleaf, ensuite créé un nouveau document, supprime le code qu'il contient, ensuite revient ici et fait \textbf{ctrl+a} \textbf{ctrl+c} et retourne sur ton projet pour faire \textbf{ctrl+v}.\\
+\\
+Voilà vous ne l'attendiez pas et pourtant voici un code complet qui vas vous permettre de faire votre rapport de projet avec une très bonne mise en page.\\
+Les anciens l'appellent LaTex mais il a fusionner avec OverLeaf pour donner OverLeaf V2. Ce site/programme permet à quiconque possède le lien de modifier le document en ligne en même temps que d'autres personnes. Google docs mais avec une mise en page avancée. 
+
+La table des matières se fait toute seule avec dans l'ordre\\ $\backslash$chapter\{  \} (chapitre)\\
+$\backslash$section\{  \} (sous-chapitre)\\
+$\backslash$subsection\{  \} (sous-sous-chapitre)\\
+Pour mieux comprendre regarde le
+"code" du document après l'introduction
+
+Si vous avez déjà écrit tout votre texte dans word,libreofice ou autre, il vous suffit de copier coller votre texte dans les différentes section que vous aller faire ici.
+
+Évidemment vous devrez supprimer le tutoriel avant de rendre ce rapport.
+
+
+\chapter{Comment écrire}
+
+Pour écrire il suffit de taper le texte que tu veux dans la bonne section dans le code qui se trouve à gauche.
+%ici%
+%c'est comme cela qu'on fait des commentaires dans le code%
+De base ce document écrira toujours sans indentation et en alignement "Justifié".
+
+\section{Retours à la ligne}
+
+Je vais mettre ici plusieurs façons de mettre à la ligne, regarde dans le "code" comment faire.
+
+Donc là j'ai fait un retour à la ligne avec interligne, dans le "code" il faut faire 2 ENTER .\\ Ici dans le code je n'ai pas mis de ENTER mais des backslashs, ça fait des retours à la ligne sans interligne.\\
+Ici dans le code je ai mis des backslashs et un ENTER mais c'est la même chose qu'avant.\\
+
+Backslashs plus 2 ENTER ça donne un interligne énorme.\\
+\\
+Même chose avec backslashs ENTER backslashs.
+\\Backslashs après le retour à la ligne et/ou devant le texte ça change rien.
+\textbf{Si tu fait juste 1 ENTER, ça ne met pas à la ligne en vrai}.
+
+
+\section{Gras, italique, souligné}
+
+Ici on va voir comment faire ceci: \textbf{\textit{\underline{"ho my god"}}}.
+
+\subsection{gras}
+
+Regarde dans le "\textbf{code}"
+
+\subsection{italique}
+
+Regarde dans le "\textit{code}"
+
+\subsection{souligné}
+
+Regarde dans le "\underline{code}"
+
+
+\section{Centrer du texte}
+
+\begin{center}
+Example 1: The following paragraph (given in quotes) is an 
+example of Center Alignment using the center environment. 
+ 
+``LaTeX is a document preparation system and document markup 
+language. LaTeX uses the TeX typesetting program for formatting 
+its output, and is itself written in the TeX macro language. 
+LaTeX is not the name of a particular editing program, but 
+refers to the encoding or tagging conventions that are used 
+in LaTeX documents".
+\end{center}
+
+\section{Indentation}
+
+Alors l'indentation ça ne sert à rien étant donné que nous ne sommes pas en romane ici.\\
+Donc si tu veux de l'indentation dans ton document, et ah tant pis parce que j'ai codé le truc pour qu'il y en ai pas et je sais pas comment le retirer.\\
+Sinon si tu veux des grands espaces \textbf{DANS} ton texte c'est très simple \hspace{1cm} comme \hspace{1cm}ceci.
+
+
+
+\chapter{Image, tableau, graph, equation, listes}
+
+tout ça tout ça
+
+\section{Images}
+Pour mettre des images c'est très simple tu fais Upload (en haut à gauche fig: \ref{un truc court qui te rappele ton image comme ça c'est pas trop dur d'y faire référence plusieur fois(le label ne sera pas écrit dans le document c'est juste pour toi)}).\\
+Ensuite tu copie colle un des exemple de code d'image(centré fig \ref{label que tu as écrit dans le code de ton image}, à droite, à gauche fig \ref{un truc court qui te rappele ton image comme ça c'est pas trop dur d'y faire référence plusieur fois(le label ne sera pas écrit dans le document c'est juste pour toi)})/d'images (plusieurs images côte à côte fig \ref{1/3}, \ref{2/3}, \ref{3/3}) qui se trouve tout au long de cette section.\\
+Après tu met le nom "du fichier image que tu viens d'importer" dans les accolades de includegraphics(dans le code), tu change la description de l'image dans caption et le label de l'image dans label(pour voir faire référence à l'image comme tu le verra plus tard).\\
+Enfin tu compile le document et si la taille ne te plait pas tu la change dans le code "begin[minipage][t][la taille que tu veux en cm]"\\
+
+\begin{figure}[!h]
+    \begin{minipage}[t]{10cm}
+        \centering
+    \includegraphics[width=1\textwidth]{latex_frere.png}
+    \caption{si jamais tu trouvais pas}
+    \label{un truc court qui te rappele ton image comme ça c'est pas trop dur d'y faire référence plusieur fois(le label ne sera pas écrit dans le document c'est juste pour toi)}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    
+    \begin{minipage}[t]{5cm}
+        \centering
+    \includegraphics[width=1\textwidth]{bulbe.png}
+    \caption{pourquoi tout le monde me regarde bizzare}
+    \label{1/3}
+    \end{minipage}
+    \begin{minipage}[t]{5cm}
+        \centering
+    \includegraphics[width=1\textwidth]{salam.png}
+    \caption{chaud patate}
+    \label{2/3}
+    \end{minipage}
+     \centering
+    \begin{minipage}[t]{5cm}
+        \centering
+    \includegraphics[width=1\textwidth]{cara.png}
+    \caption{carapils}
+    \label{3/3}
+    \end{minipage}
+\end{figure}
+\newpage
+\subsection{faire une référence à une image dans le texte}
+
+Il est très probable que ton image ne se mette pas où tu le désire, te prend pas trop la tête à essayer de régler cela, fait y référence avec le label c'est suffisant. 
+
+comment faire: 
+ (voir fig \ref{label que tu as écrit dans le code de ton image})
+
+\begin{figure}[!h]
+    \centering
+    \begin{minipage}[t]{5cm}
+        \centering
+    \includegraphics[width=1\textwidth]{oui.png}
+    \caption{oui stiti}
+    \label{label que tu as écrit dans le code de ton image}
+    \end{minipage}
+\end{figure}
+
+
+\section{Tableau}
+
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+  \hline
+  & Avant-projet & Prototype pilote & Engin final \\
+  \hline
+  Dimensions (cm) & $300 \times 250 \times 85$ & $35 \times 14,5 \times 20$ & $320 \times 250 \times 100$\\
+  ligne 1 & un truc & un truc & un truc \\
+  ligne 2 & un truc & un truc & un truc \\
+  ligne 3 & un truc & un truc & un truc \\
+  ligne 4 & un truc & un truc & un truc \\
+  ligne 5 & un truc & un truc & un truc \\
+  ligne 6 & un truc & un truc & un truc \\
+  ligne 7 & un truc & un truc & un truc \\
+  ligne 8 & un truc & un truc & un truc \\
+  ligne 9 & un truc & un truc & un truc \\
+  \hline
+\end{tabular}
+\end{center}
+
+
+\section{Des calculs et des nombres}
+
+
+\subsection{Full équation de différentes formes}
+
+
+\begin{multicols}{2}
+\begin{itemize}
+    \item $v_0 = 0 m/s$
+\item $v_2 = 20 km/h = 5,6 m/s$
+\item $\Delta t = 20 s$
+\item $a = \frac{\Delta v}{\Delta t} = 0,27 m/s^2$
+\item $m_r = 7 000 kg$
+\item $m_a = 83 000 kg$
+\end{itemize} 
+\end{multicols}
+\[v(t) = \left\{ 
+\begin{array}{l l}
+  0,27.t\ m/s & \quad \text{$t<20$}\\
+  5,6 m/s & \quad \text{$t\geqslant 20$}\\ \end{array} \right. \]
+
+
+\[a(t) = \left\{ 
+\begin{array}{l l}
+  0,27 m/s^2 & \quad \text{$t<20$}\\
+  0 m/s^2 & \quad \text{$t\geqslant 20$}\\ \end{array} \right. \]
+  
+\[F(t) = \left\{ 
+\begin{array}{l l}
+  F_f +F_a = 36000 + 24300 = 60300 N & \quad \text{$t<20$}\\
+  F_f = 36000 N & \quad \text{$t\geqslant 20$}\\ \end{array} \right. \]
+  
+\subsection{équation avec référence}
+
+ référence à une équation éq:\ref{equation:1}
+
+\begin{equation} \label{equation:1}
+F_f = (m_r + m_a).0,4 = (7000 + 83000).0,4 = 36000N
+\end{equation}
+
+
+
+
+\section{faire un graphique}
+
+\setlength{\unitlength}{8cm}
+\begin{figure}[h!]
+     \centering
+\begin{picture}(1.2,0.6)
+
+\put(0,0){\vector(0,1){0.5}}
+\put(0,0){\vector(1,0){1}}
+
+\put(-0.075,0.53){je marche}
+\put(1.02,-0.015){sur le sable}
+
+\put(0,0){\line(5,4){0.5}}
+\put(0.5,0.4){\line(0,-1){0.15}}
+\put(0.5,0.25){\line(1,0){0.5}}
+\put(0.31,0.25){\line(0,-1){0.25}}
+
+\put(-0.05,0){$0$}
+\put(-0.2,0.38){$10h$}
+\put(-0.2,0.23){$1h$}
+
+\put(-0.02,-0.05){$0$}
+\put(0.25,-0.05){$6km$}
+\put(0.48,-0.05){$50km$}
+\end{picture}
+      \centering
+      \caption{je marche en fonction de sur le sable}
+     \label{fig:my_label4}
+\end{figure}
+
+\section{faire une liste}
+
+\begin{itemize}
+ \item rouge
+ \item Rouge claire = Pistons
+ \item Bleu = Roues Folles (A et B)
+ \item Bleu foncé = Barre de support fixe(4) et barre de support coulissante (3)
+ \item Orange 
+ \end{itemize}
+
+\subsection{faire une liste centrée}
+
+\begin{itemize}
+\centering
+ \item rouge
+ \item Rouge claire = Pistons
+ \item Bleu = Roues Folles (A et B)
+ \item Bleu foncé = Barre de support fixe(4) et barre de support coulissante (3)
+ \item Orange 
+ \end{itemize}
+
+ 
+\subsection{faire une liste double}
+
+
+\begin{multicols}{2}
+\begin{itemize}
+ \item Rouge foncé = Moteurs (A' et B')
+ \item Rouge claire = Pistons
+ \item Bleu = Roues Folles (A et B)
+ \item Bleu foncé = Barre de support fixe(4) et barre de support coulissante (3)
+ \item Orange = Roues différentielles (C et D cachée)
+ \end{itemize}
+ \end{multicols}
+
+
+
+
+
+
+
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+
+\textbf{\textbf{Paye moi une choppe pour ce joli cadeau}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+
+Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+
+Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet. 
+
+
+\chapter*{Bibliographie et iconographie}
+
+\addcontentsline{toc}{chapter}{Bibliographie}
+
+\textbf{Bibliographie:}\\
+
+truc, machin, disponible en ligne à
+l'URL \url{http://www.truc.com/machin/}, consulté le 02-12-2012.
+
+
+
+\newline
+\textbf{Iconographie:}\\
+
+ truc, Machin, disponible en ligne à
+l'URL \url{https://www.truc.com/machin/}, consulté le 12-12-2012.
+
+
+\appendix
+
+\chapter*{Annexes}
+\addcontentsline{toc}{chapter}{Annexe}
+\renewcommand{\thesection}{A\arabic{section}}
+
+Ici tu vas juste mettre tes annexes, les minis intros et conclusion tu les mets dans le corps du texte en faisant référence à tes annexes grâce à la commande $\backslash$ref\{ label de l'annexe \} % "\ref{label de l'annexe}" si tu regarde ceci dans le code
+
+\section{Cahier des charges} \label{cdc}
+
+\section{Evolution des maquettes et photos}\label{evo}
+
+\section{Dessins 2D du prototype (3 vues standard + coupe, à la main)}\label{2d}
+
+\section{Dessin 3D du prototype (à la main)}\label{3d}
+
+\section{Fabrication du prototype (photos des pièces 3D, preuve de la fabrication par le groupe, ...)} \label{fab}
+
+\section{Illustrations du mécanisme (dessins, schémas, coupes, plans) et de l’engin} \label{meca}
+
+\section{Modèle physique (sources d’énergie, paramètres réglables, modèle de frottement)} \label{phys}
+
+\section{Simulation (programme, résultats, graphiques)} \label{simu}
+
+\section{Eléments relatifs au prototype pour le concours} \label{conc}
+
+\section{Poster pour le concour} \label{poster}
+
+\section{Contrat d’équipe, répartition des fonctions, EPP individuelles et de groupe} \label{contrat}
+
+\section{Grilles de planification des 4 dernières semaines} \label{plannif}
+
+\section{Comptabilité du projet (coût des pièces, ...)} \label{compta}
+
+\end{document}
